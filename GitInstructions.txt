@@ -70,3 +70,5 @@ git diff --staged (muestra los cambios que se encuentran en la etapa de stage)
 
 git log --oneline (muestra el historial resumido)
 
+seguir desde 54:08 RAMAS
+
