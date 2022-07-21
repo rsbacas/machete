@@ -63,3 +63,10 @@ git status -s (lista los archivos de forma simplificada)
     M   modificado (pasa de rojo a verde cuando: git add)
     ??  no está "GIT add" para poder hacerle seguimiento
     A   archivo agregado (GIT ADD archivo.ext)    
+
+git diff (muestra los cambios que escribimos, pero que no están pasados a la etapa de stage con Git add)
+(se sale con Q)
+git diff --staged (muestra los cambios que se encuentran en la etapa de stage)
+
+git log --oneline (muestra el historial resumido)
+
