@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=VdGzPZ31ts8
+
 git --version
 
 CONFIGURACIÓN INICIAL DE USUARIO:
@@ -54,4 +56,10 @@ MOVER ARCHIVOS O CAMBIARLE EL NOMBRE:
 git mv archivo.txt nuevoNombre.txt (renombra y agrega a stage inmediatamente)
 
 IGNORAR ARCHIVOS PARA QUE NO SEAN INCLUIDOS NUNCA EN NUESTROS REPOSITORIOS:
+(para archivos de configuración específicos de nuestra máquina, como variables de entorno (con usuarios y contraseñas propios))
+[ver en el video]
 
+git status -s (lista los archivos de forma simplificada)
+    M   modificado (pasa de rojo a verde cuando: git add)
+    ??  no está "GIT add" para poder hacerle seguimiento
+    A   archivo agregado (GIT ADD archivo.ext)    
