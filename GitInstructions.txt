@@ -1,0 +1,36 @@
+git --version
+
+CONFIGURACIÓN INICIAL DE USUARIO:
+git config --global user.name xxxxxx (configuración global y no por proyecto)
+git config --global user.email xxxxxxx@gmail.com
+
+CONFIGURACIÓN DEL EDITOR DE TEXTO:
+git config --global core.editor "code --wait" (le indica a Git que VSCode es el editor de texto)
+git config --global -e (se abre el archivo de configuración global .gitconfig en VSCode)
+GIT queda esperando hasta que cierro el archivo en VSCode
+git config --global core.autocrlf true
+
+git config -h (muestra el listado de configuraciones posibles)
+----------------------------------------------------------
+COMANDOS:
+
+ls (lista los archivos y carpetas de un determinado directorio)
+pwd (para saber en qué carpeta me encuentro actualmente)
+git init (inicializa un repositorio vacío en la carpeta, crea el directorio .git oculto)
+ls -a (muestra los archivos y directorios ocultos)
+code . (abre la carpeta en VSCode)
+git status (muestra el estado actual del repositorio) [En El VSCode se indica con una letra a la derecha del archivo en el EXPLORER]
+        U   untracked files (GIT no tiene registro del archivo)
+        M   archivo modificado (GIT sabe que está modificado)
+        A   archivo agregado (GIT ADD archivo.ext)
+  untracked files son archivos que GIT no está siguiendo, hay que seleccionarlos con
+git add nombreDeArchivo.ext ("git add . " agrega todos los archivos, es una mala práctica) [git add archivo1.txt archivo2.txt (sintaxis para agregar varios archivos)]
+git status (para ver el estado, si el archivo add pasó a color verde y quedó listo to be commited)
+  si modificamos un archivo que ya está add se necesita volver a hacer add del mismo archivo para que pase a la etapa de stage
+  lo que pasa a la etapa de stage con add no son los archivos sino los cambios
+git commit -m "mensaje que tenga sentido"
+git status (si todos los archivos fueron commiteados muestra "nothing to commit")
+
+Otra forma de hacer commit:
+git commit (se abre el VSCode y hay que agregar un comentario, guardar y cerrar)
+git status (tiene que mostrar nothing to commit)
