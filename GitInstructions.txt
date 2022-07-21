@@ -34,3 +34,24 @@ git status (si todos los archivos fueron commiteados muestra "nothing to commit"
 Otra forma de hacer commit:
 git commit (se abre el VSCode y hay que agregar un comentario, guardar y cerrar)
 git status (tiene que mostrar nothing to commit)
+
+PARA BORRAR ARCHIVO:
+rm archivo.ext 
+git add archivo.ext
+git commit -m "eliminando archivo"
+  Los dos primeros pasos se pueden simplificar haciendo: 
+    git rm archivo.ext
+
+Para sacar cambios que fueron pasados a la etapa de stage
+  git restore --staged archivo.ext (queda en el área de trabajo)
+Para recuperar ese archivo que estaba eliminado
+  git restore archivo.txt
+
+MOVER ARCHIVOS O CAMBIARLE EL NOMBRE:
+  mv archivo.txt nuevoNombre.txt (queda como untracked file)
+  git add archivo.txt nuevoNombre.txt (primero el nombre viejo y después el nuevo)
+  git commit -m "renombrando archivo"
+git mv archivo.txt nuevoNombre.txt (renombra y agrega a stage inmediatamente)
+
+IGNORAR ARCHIVOS PARA QUE NO SEAN INCLUIDOS NUNCA EN NUESTROS REPOSITORIOS:
+
